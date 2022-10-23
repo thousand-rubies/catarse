@@ -61,8 +61,8 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
-gem 'omniauth', '~> 1.3.2'
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
+gem 'omniauth', '~> 2.1.0'
 gem 'omniauth-facebook'
 gem 'koala'
 gem 'devise', '4.7.2'
@@ -97,7 +97,7 @@ gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.1'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
 
@@ -114,7 +114,7 @@ group :production do
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  gem 'heroku-deflater', '>= 0.6.2'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
@@ -178,6 +178,6 @@ gem 'coffee-rails'
 gem 'compass-rails'
 gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
-gem "rack", ">= 1.6.11"
+gem "rack", ">= 3.0.0"
 gem "loofah", ">= 2.2.3"
 gem 'concurrent-ruby'
