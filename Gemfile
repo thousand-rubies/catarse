@@ -171,7 +171,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'jquery-ui-rails'
 gem 'sass-rails'
 gem 'coffee-rails'
