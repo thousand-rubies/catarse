@@ -3,14 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.1'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'bigdecimal', '1.3.5'
 
 gem 'countries', '3.0.0'
 gem 'protected_attributes'
-gem 'rails-observers'
+gem 'rails-observers', '>= 0.1.4'
 gem 'rb-readline'
 gem 'ruby-progressbar'
 
@@ -21,7 +21,7 @@ gem "best_in_place"
 
 # State machine for attributes on models
 # @TODO move payment to statesman
-gem 'state_machines-activerecord'
+gem 'state_machines-activerecord', '>= 0.6.0'
 gem 'statesman'
 
 # Database and data related
@@ -30,7 +30,7 @@ gem 'dbhero', '>= 1.1.12'
 gem 'postgres-copy'
 gem 'postgres_ext'
 gem 'pg_search'
-gem 'i18n_alchemy'
+gem 'i18n_alchemy', '>= 0.4.0'
 gem "i18n-js", ">= 3.0.0.rc11"
 gem 'whenever'
 
@@ -45,7 +45,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -61,7 +61,7 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.16', '>= 1.16.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
 gem 'omniauth-facebook'
 gem 'koala'
@@ -75,35 +75,35 @@ gem 'sendgrid-ruby'
 gem 'zendesk_api'
 
 # HTML manipulation and formatting
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>= 4.0.0'
+gem 'mail_form', '>= 1.8.0'
 gem "auto_html", "~> 1.6"
 gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails', branch: 'master'
 
 # Uploads
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'mini_magick', '>= 4.9.4'
 
 # Other Tools
 gem 'excelinator'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope'
+gem 'inherited_resources', '>= 1.12.0'
+gem 'has_scope', '>= 0.7.2'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
 gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
 
 # Translations
 gem 'http_accept_language'
-gem 'routing-filter', '~> 0.6.0'
+gem 'routing-filter', '~> 0.6.3'
 
 group :production do
   # Gem used to handle image uploading
@@ -114,7 +114,7 @@ group :production do
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  gem 'heroku-deflater', '>= 0.6.2'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
@@ -173,11 +173,11 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'sass-rails'
-gem 'coffee-rails'
+gem 'sass-rails', '>= 5.0.8'
+gem 'coffee-rails', '>= 4.2.2'
 gem 'compass-rails'
 gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
-gem "rack", ">= 1.6.11"
+gem "rack", ">= 2.0.9.2"
 gem "loofah", ">= 2.2.3"
 gem 'concurrent-ruby'
