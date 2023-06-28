@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.4'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'bigdecimal', '1.3.5'
@@ -27,7 +27,7 @@ gem 'statesman'
 # Database and data related
 gem 'pg', '0.19.0'
 gem 'dbhero', '>= 1.1.12'
-gem 'postgres-copy'
+gem 'postgres-copy', '>= 1.1.0'
 gem 'postgres_ext'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -45,15 +45,15 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
-gem 'draper'
+gem 'draper', '>= 3.1.0'
 gem "sentry-raven"
 
 # Frontend stuff
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.2'
 gem 'browser', "1.0.1"
 gem "cocoon"
 
@@ -61,11 +61,11 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.16', '>= 1.16.0' # see semver.org
 gem 'omniauth', '~> 1.3.2'
 gem 'omniauth-facebook'
 gem 'koala'
-gem 'devise', '4.7.2'
+gem 'devise', '4.7.3'
 gem 'pundit'
 gem 'json_web_token'
 
@@ -75,8 +75,8 @@ gem 'sendgrid-ruby'
 gem 'zendesk_api'
 
 # HTML manipulation and formatting
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>= 4.0.0'
+gem 'mail_form', '>= 1.8.0'
 gem "auto_html", "~> 1.6"
 gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails', branch: 'master'
@@ -89,21 +89,21 @@ gem 'mini_magick', '>= 4.9.4'
 gem 'excelinator'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope'
+gem 'inherited_resources', '>= 1.12.0'
+gem 'has_scope', '>= 0.7.2'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
 gem 'typhoeus'
 gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 gem "cpf_cnpj"
 gem 'aws-sdk', '~> 2'
 
 # Translations
 gem 'http_accept_language'
-gem 'routing-filter', '~> 0.6.0'
+gem 'routing-filter', '~> 0.6.3'
 
 group :production do
   # Gem used to handle image uploading
@@ -132,7 +132,7 @@ group :production do
   #gem 'dalli'
 end
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 3.3.1'
   gem "rails-erd"
   gem "letter_opener"
   gem 'foreman'
@@ -146,12 +146,12 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.0'
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
   gem 'pry'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.14.2'
 end
 
 group :sandbox, :test, :development do
@@ -166,16 +166,16 @@ group :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.8.0'
   gem 'capybara'
   gem 'selenium-webdriver'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 gem 'jquery-ui-rails'
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'compass-rails'
+gem 'sass-rails', '>= 5.0.8'
+gem 'coffee-rails', '>= 4.2.2'
+gem 'compass-rails', '>= 3.1.0'
 gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
 gem "rack", ">= 1.6.11"
