@@ -139,7 +139,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   #gem 'thin'
-  gem 'puma'
+  gem 'puma', '>= 5.6.7'
   # Uncomment only for optimization, should be commented on master branch
   # gem 'rack-mini-profiler'
   # gem 'ruby-prof'
