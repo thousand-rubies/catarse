@@ -14,7 +14,7 @@ gem 'rails-observers'
 gem 'rb-readline'
 gem 'ruby-progressbar'
 
-gem 'sidekiq',  '~> 4.0.1'
+gem 'sidekiq', '~> 7.1.3'
 
 # Turns every field on a editable one
 gem "best_in_place"
@@ -45,7 +45,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 2.16.3'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
