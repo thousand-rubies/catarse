@@ -17,7 +17,7 @@ gem 'ruby-progressbar'
 gem 'sidekiq',  '~> 4.0.1'
 
 # Turns every field on a editable one
-gem "best_in_place"
+gem "best_in_place", ">= 4.0.0"
 
 # State machine for attributes on models
 # @TODO move payment to statesman
