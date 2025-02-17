@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 7.0.0'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'bigdecimal', '1.3.5'
@@ -27,7 +27,7 @@ gem 'statesman'
 # Database and data related
 gem 'pg', '0.19.0'
 gem 'dbhero', '>= 1.1.12'
-gem 'postgres-copy'
+gem 'postgres-copy', '>= 1.6.0'
 gem 'postgres_ext'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -114,7 +114,7 @@ group :production do
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  gem 'heroku-deflater', '>= 0.7.0'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
@@ -173,11 +173,11 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'compass-rails'
 gem 'uglifier', '4.0.0'
 gem 'sprockets', '~> 3.7.2'
-gem "rack", ">= 1.6.11"
+gem "rack", ">= 2.2.11"
 gem "loofah", ">= 2.2.3"
 gem 'concurrent-ruby'
