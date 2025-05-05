@@ -146,7 +146,7 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
