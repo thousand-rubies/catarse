@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 gem 'bigdecimal', '1.3.5'
@@ -21,15 +21,15 @@ gem "best_in_place"
 
 # State machine for attributes on models
 # @TODO move payment to statesman
-gem 'state_machines-activerecord'
+gem 'state_machines-activerecord', '>= 0.6.0'
 gem 'statesman'
 
 # Database and data related
 gem 'pg', '0.19.0'
 gem 'dbhero', '>= 1.1.12'
-gem 'postgres-copy'
+gem 'postgres-copy', '>= 1.1.0'
 gem 'postgres_ext'
-gem 'pg_search'
+gem 'pg_search', '>= 2.0.0'
 gem 'i18n_alchemy'
 gem "i18n-js", ">= 3.0.0.rc11"
 gem 'whenever'
@@ -45,7 +45,7 @@ gem 'mixpanel-ruby'
 gem 'mixpanel_client'
 
 # Payment engines
-gem 'catarse_pagarme', '~> 2.16.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 # gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -78,7 +78,7 @@ gem 'zendesk_api'
 gem 'simple_form'
 gem 'mail_form'
 gem "auto_html", "~> 1.6"
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.2'
 gem 'redactor-rails', github: 'catarse/redactor-rails', branch: 'master'
 
 # Uploads
@@ -87,7 +87,7 @@ gem 'mini_magick', '>= 4.9.4'
 
 # Other Tools
 gem 'excelinator'
-gem 'ranked-model'
+gem 'ranked-model', '>= 0.4.1'
 gem 'feedjira'
 gem 'inherited_resources'
 gem 'has_scope'
@@ -123,7 +123,7 @@ group :production do
   # Monitoring with the new new relic
   gem 'newrelic_rpm', '~> 3.18.1.330'
 
-  gem "activerecord-nulldb-adapter"
+  gem "activerecord-nulldb-adapter", ">= 0.3.6"
 
   # Using dalli and memcachier have not presented significative performance gains
   # Probably this is due to our pattern of cache usage
@@ -133,7 +133,7 @@ group :production do
 end
 group :development do
   gem 'web-console'
-  gem "rails-erd"
+  gem "rails-erd", ">= 1.5.1"
   gem "letter_opener"
   gem 'foreman'
   gem 'better_errors'
